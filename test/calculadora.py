@@ -1,21 +1,18 @@
-"""
-numero1 = float(input("Ingrese el primer número: "))
-operador = input("Ingrese la operación (+, -, *, /): ")
-numero2 = float(input("Ingrese el segundo número: "))
+def sumar(a, b):
+    return a + b
 
-if operador == "+":
-    resultado = numero1 + numero2
-elif operador == "-":
-    resultado = numero1 - numero2
-elif operador == "*":
-    resultado = numero1 * numero2
-elif operador == "/":
-    resultado = numero1 / numero2
-else:
-    resultado = "Operación no válida"
+def restar(a, b):
+    return a - b
 
-print("Resultado:", resultado)
-"""
+def multiplicar(a, b):
+    return a * b
+
+def dividir(a, b):
+    if b == 0:
+        raise ValueError("Error: No se puede dividir por cero.")
+    return a / b
+
+
 """
 numero1 = float(input("Ingrese el primer número: "))
 operador = input("Ingrese el operador (+): ")
@@ -48,7 +45,7 @@ if operador == "*":
     resultado = numero1 * numero2
 print("Resultado:", resultado)
 """
-
+"""
 try:
     numero = int(input("Ingresa un número entero: "))
     resultado = 588/ numero
@@ -59,3 +56,4 @@ except ValueError:
     print("Error: Entrada inválida, no es un número entero.")
 finally:
     print("Operación finalizada.")
+"""
